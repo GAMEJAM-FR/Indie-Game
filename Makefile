@@ -2,6 +2,7 @@
 # paths
 #
 INCDIR :=	./includes
+IRR_INCDIR :=	$(dir $(shell find /usr/include/ ../ -type f -name "irrlicht.h" -print -quit))
 SRCDIR :=	./sources
 
 #
@@ -31,7 +32,7 @@ OBJ :=		$(SRC:.cpp=.swag)
 all:		$(NAME)
 
 %.swag:		%.cpp
-		$(CXX) -c $(CXXFLAGS) -o $@ $<
+		CPLUS_INCLUDE_PATH=$(IRR_INCDIR) $(CXX) -c $(CXXFLAGS) -o $@ $<
 
 $(NAME):	$(OBJ)
 		$(LINKER) -o $@ $^ $(LDFLAGS) $(LDLIBS)
