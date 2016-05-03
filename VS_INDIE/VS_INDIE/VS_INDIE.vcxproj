@@ -41,7 +41,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -69,14 +69,22 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>..\..</OutDir>
+    <OutDir>..\..\bin\</OutDir>
+    <ExecutablePath>C:\msys64\home\Eikinel\Indie-Game\lib\irrlicht-1.8.3\bin\Win32-VisualStudio;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\msys64\home\Eikinel\Indie-Game\lib\irrlicht-1.8.3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\msys64\home\Eikinel\Indie-Game\lib\irrlicht-1.8.3\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
+    <TargetName>Suck My Wheels - The Movie - The Game</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>..\..</OutDir>
+    <OutDir>../../</OutDir>
+    <IncludePath>C:\msys64\home\Eikinel\Indie-Game\lib\irrlicht-1.8.3\include;$(IncludePath)</IncludePath>
+    <ExecutablePath>C:\msys64\home\Eikinel\Indie-Game\lib\irrlicht-1.8.3\bin\Win32-VisualStudio;$(ExecutablePath)</ExecutablePath>
+    <LibraryPath>C:\msys64\home\Eikinel\Indie-Game\lib\irrlicht-1.8.3\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
+    <TargetName>Suck My Wheels - The Movie - The Game</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <WarningLevel>Level2</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>..\..\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -85,7 +93,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <WarningLevel>Level2</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>..\..\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

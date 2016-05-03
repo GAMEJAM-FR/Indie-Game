@@ -1,5 +1,4 @@
 #include <irrlicht.h>
-
 #include "Constants.hpp"
 
 using namespace irr;
