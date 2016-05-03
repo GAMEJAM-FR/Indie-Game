@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F20377F4-C0D8-42D1-AB56-DED693C16BEC}</ProjectGuid>
+    <ProjectGuid>{328921FC-223C-410E-A6D7-9F3B0AC31F84}</ProjectGuid>
     <RootNamespace>VS_INDIE</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -69,46 +69,30 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>..\..\bin\</OutDir>
-    <ExecutablePath>C:\msys64\home\Eikinel\Indie-Game\lib\irrlicht-1.8.3\bin\Win32-VisualStudio;$(ExecutablePath)</ExecutablePath>
-    <IncludePath>C:\msys64\home\Eikinel\Indie-Game\lib\irrlicht-1.8.3\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\msys64\home\Eikinel\Indie-Game\lib\irrlicht-1.8.3\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
-    <TargetName>Suck My Wheels - The Movie - The Game</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>../../</OutDir>
-    <IncludePath>C:\msys64\home\Eikinel\Indie-Game\lib\irrlicht-1.8.3\include;$(IncludePath)</IncludePath>
-    <ExecutablePath>C:\msys64\home\Eikinel\Indie-Game\lib\irrlicht-1.8.3\bin\Win32-VisualStudio;$(ExecutablePath)</ExecutablePath>
-    <LibraryPath>C:\msys64\home\Eikinel\Indie-Game\lib\irrlicht-1.8.3\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
-    <TargetName>Suck My Wheels - The Movie - The Game</TargetName>
+    <IncludePath>..\..\..\irrlicht-1.8.3\irrlicht-1.8.3\include;..\..\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\..\irrlicht-1.8.3\irrlicht-1.8.3\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <WarningLevel>Level2</WarningLevel>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <SDLCheck>true</SDLCheck>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <WarningLevel>Level2</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <SDLCheck>true</SDLCheck>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\bavoys_j\Documents\Indie-Game\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
