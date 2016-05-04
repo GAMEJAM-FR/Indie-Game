@@ -1,5 +1,5 @@
-#include "Constants.hpp"
 #include "Loop.hpp"
+#include "Constants.hpp"
 
 MenuLoop::MenuLoop(device_t *d)
   : _d(d), _title(L"Hello World! - Irrlicht Engine Demo")

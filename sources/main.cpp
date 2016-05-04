@@ -1,5 +1,5 @@
-#include "Constants.hpp"
 #include "Loop.hpp"
+#include "Constants.hpp"
 
 #ifdef _IRR_WINDOWS_
 # pragma comment(lib, "Irrlicht.lib")
