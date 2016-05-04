@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -71,7 +71,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>..\..\..\irrlicht-1.8.3\irrlicht-1.8.3\include;..\..\includes;$(IncludePath)</IncludePath>
     <LibraryPath>..\..\..\irrlicht-1.8.3\irrlicht-1.8.3\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
-    <ReferencePath>$(VC_ReferencesPath_x86);</ReferencePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -79,16 +78,6 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
-    <Link>
-      <EmbedManagedResourceFile>
-      </EmbedManagedResourceFile>
-      <AssemblyLinkResource>
-      </AssemblyLinkResource>
-      <AddModuleNamesToAssembly>
-      </AddModuleNamesToAssembly>
-      <DelayLoadDLLs>
-      </DelayLoadDLLs>
-    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
