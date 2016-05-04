@@ -22,7 +22,8 @@ LDLIBS :=	-l Irrlicht
 # indie binary options
 #
 NAME :=		indie
-SRC :=		main.cpp
+SRC :=		main.cpp \
+		MenuLoop.cpp
 SRC :=		$(addprefix $(SRCDIR)/, $(SRC))
 OBJ :=		$(SRC:.cpp=.swag)
 OBJ_DEBUG :=	$(SRC:.cpp=.debug)
