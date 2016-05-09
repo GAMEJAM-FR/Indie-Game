@@ -3,7 +3,7 @@
 
 #ifdef _IRR_WINDOWS_
 # pragma comment(lib, "Irrlicht.lib")
-# pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
+// # pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
 /* 
@@ -18,7 +18,7 @@ int main()
   /* lib and device init */
   device.ptr = irr::createDevice(irr::video::EDT_SOFTWARE,
 				 irr::core::dimension2d<irr::u32>(640, 480), 16,
-				 false, false, false, 0);
+				 false, true, false, 0);
   if (!device.ptr)
     return (ERROR_CODE);
   device.driver = device.ptr->getVideoDriver();
