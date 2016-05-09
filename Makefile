@@ -2,7 +2,7 @@
 # paths
 #
 INCDIR :=	./includes
-IRR_INCDIR :=	$(dir $(shell find /usr/include/ ../ -type f -name "irrlicht.h" -print -quit))
+IRR_INCDIR :=	$(dir $(shell find /usr/include/ /mingw64/include/ -type f -name "irrlicht.h" -print -quit))
 SRCDIR :=	./sources
 
 #
